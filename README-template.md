@@ -34,7 +34,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flex box
 
 ### What I learned
 
@@ -68,8 +68,7 @@ My major learnings while working on this project are:
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+```
 
 ## Author
 

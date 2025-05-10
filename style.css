@@ -72,12 +72,15 @@ h2{
     font-weight: var(--font-weight-700);
     color: var(--Slate-900);
     margin-bottom: var(--space-200);
+    line-height: 1.2;
 }
 
 p{
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-400);
     color: var(--Slate-500);
+    line-height: 1.4;
+    letter-spacing: 0.2px;
 }
 
 div{

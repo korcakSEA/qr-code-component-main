@@ -15,66 +15,75 @@
     /*** Typography ***/
 
     /* Font Size */
-    --font-size: 0.9375rem; /* 15px */
+    --font-size-sm: 0.9375rem; /* 15px */
+    --font-size-md: 1.375rem; /* 22px */
+
 
     /* Font-Weight */
     --font-weight-400: 400;
     --font-weight-700: 700;
+
+    /* Spacing */
+    --space-200:1rem; /* 16px */
+    --space-300: 1.5rem; /* 24px */
+    --space-500: 2.5rem; /* 40px */
 }
 
 body{
+    
     font-family: "Outfit", sans-serif;
     background-color: var(--Slate-300);
 
-    /* Used flex layout to center QR container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     height: 100vh;
 }
 
-.qr-container{
+.container{
 
     background-color: var(--white);
 
     /* Used flex layout to center elements in container */
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border-radius: 2rem;
-    padding: 1rem;
-    max-width: 20rem;
 
-    /* shadow */
-    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding: var(--space-200);
+    width: 20rem;
+
+    /* Position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
 }
 
 /* qr code properties */
 
-.qr-container img{
+.container img{
     max-width: 100%;
     display: block;
     border-radius: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-300);
 }
 
-/* h2 properties */
-.qr-container h2{
-    font-size: 1.5rem;
+/* Text properties */
+
+h2{
+    font-size: var(--font-size-md);
     font-weight: var(--font-weight-700);
     color: var(--Slate-900);
-    margin-bottom: 1rem;
-    text-align: center;
+    margin-bottom: var(--space-200);
 }
 
-/* p properties */
-.qr-container p{
-    font-size: var(--font-size);
+p{
+    font-size: var(--font-size-sm);
     font-weight: var(--font-weight-400);
     color: var(--Slate-500);
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
 }
+
+div{
+    text-align: center;
+    margin-bottom: var(--space-300);
+    padding-inline: var(--space-200);
+}
+
 
